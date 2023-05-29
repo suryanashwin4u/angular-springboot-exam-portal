@@ -25,6 +25,23 @@ public class User {
 
     private String profile;
 
+    public User() {
+
+    }
+
+    public User(Long id, String username, String password, String firstName, String lastName, String email,
+            String phone, String profile, boolean enabled) {
+        Id = id;
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.profile = profile;
+        this.enabled = enabled;
+    }
+
     public String getProfile() {
         return profile;
     }
@@ -34,10 +51,6 @@ public class User {
     }
 
     private boolean enabled = true;
-
-    public User() {
-
-    }
 
     public Long getId() {
         return Id;
